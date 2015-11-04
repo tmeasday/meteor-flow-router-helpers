@@ -1,3 +1,6 @@
+FlowRouterPackage = Package['kadira:flow-router'] || Package['meteorhacks:flow-router'];
+FlowRouter = FlowRouterPackage.FlowRouter
+
 # check for subscriptions to be ready
 subsReady = (subs...) ->
   return FlowRouter.subsReady() if subs.length is 1
